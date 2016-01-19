@@ -1,0 +1,52 @@
+;Saved by FPSCR Object Importer v1.000
+;header
+desc             = Radio
+
+;visualinfo
+textured         = Radio.jpg
+effect           = effectbank\reloaded\entity_basic.fx
+castshadow       = 0
+transparency     = 0
+
+;orientation
+model            = Radio.dbo
+offx             = 0
+offy             = 0
+offz             = 0
+rotx             = 0
+roty             = 0
+rotz             = 0
+scale            = 200
+collisionmode    = 0
+defaultstatic    = 0
+materialindex    = 3
+
+;physics shapes
+physicscount     = 1
+physics0         = "0,8.45630073547,6.22341108322,2.62707686424,0,0,0,0,0,0"
+
+;identity details
+ischaracter      = 0
+hasweapon        = 
+isobjective      = 1
+cantakeweapon    = 0
+
+;statistics
+strength         = 25
+explodable       = 0
+debrisshape      = 0
+
+;ai
+aiinit           = appear.lua
+aimain           = radio.lua
+aidestroy        = disappear.lua
+
+;spawn
+spawnmax         = 0
+spawndelay       = 0
+spawnqty         = 0
+
+;anim
+animmax          = 0
+anim0            = 0,0
+playanimineditor = 0
