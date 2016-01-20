@@ -1,8 +1,5 @@
 --[[
 скрипт управляющий включением и выключением радиоприемника.
-
-To-Do:
-- сделать уменьшение громкости при удалении от приемника.
 --]]
 state = 0;
 
@@ -37,10 +34,9 @@ function radio_main(e)
 
   end
 
-  if GetPlayerDistance(e) > 1000 and state == 1 then
-  --если пользователь далеко отошел от радиоприемника, выключаем его
-    state = 0;
-    StopSound(e,0);
+  if state == 1 and GetPlayerDistance(e) > 210 then
+  --если пользователь отходит от включенного радиоприемника, делаем звук тише
+    SetSoundVolume(100 - GetPlayerDistance(e)/70)
   end
 
 end --end radio_main
